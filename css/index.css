@@ -23,44 +23,28 @@ header{
 	position: fixed;
 	right: 0;
 	left: 0;
-	height: 69px;
 	z-index: 10;
 	color: var(--header-footer-color);
 }
 
 .nav-box{
-	width: 60vw;
+	/* width: 60vw; */
+	display: flex;
 	text-align: center;
-	
+	height: var(--header-height);
+	align-items: center;
 }
 
-nav{
+#header-nav{
 	background-color: var(--header-bgcolor);
-
 }
-
-nav ul{
-	list-style-type: none;
-}
-
-.nav-list li{
-	display: inline-block;
-	margin-left: 3vw;
-}
-
 
 .nav-list-link{
-
 	text-decoration: none;
 	color: white;
 	font-size:  1.2em;
+	padding-inline: 20px;
 }
-
-img{
-	height: 400px;
-	width: 400px;
-	padding: 0px;
-} /* Probably don't use an unrestrictive img selector. */
 
 .nav-text{
 	position: relative;
@@ -68,9 +52,11 @@ img{
 	transform: translateY(-50%);
 }
 
-li>img{
-	height: 50px;
+#top-logo-img {
 	width: auto;
+	height: 65px;
+	padding-inline: 6%;
+	/* margin-bottom: var(--header-bottom-padding); */
 }
 .databased{
 	position: relative;
@@ -96,42 +82,72 @@ footer{
 
 
 main{
-	height: 400vh; /* temp for debugging/sample */
+	/* height: 400vh; temp for debugging/sample */
 }
 
 #title{
 	text-align: center;
-	width: 100%;
-	height: 100vh;
+	padding-block: 25%;
 }
 
 #about{
 	position: relative;
-	height: 100vh;
-	width: 60vw;
-	transform: translateX(-50%);
-	left: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 0 var(--content-side-padding);
 }
 
-.about-title{
-	display: inline-block;
-	width: auto;
+.title{
 	font-size: 3em;
-	position: relative;
-	margin-top: 140px;
-	left: 80%;
+	padding-block: 10px;
 }
 
 .about-content{
-	width: 30vw;
-	text-align: right;
-	position: relative;
-	transform: translateX(-100%);
-	left: 100%;
+	display: flex;
+	justify-content: center;
+}
+#about-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 15%;
+}
+
+.placeholder {
+	padding: 10%
 }
 
 footer {
 	vertical-align: bottom;
+}
+
+#events {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 30%;
+}
+
+#event-title {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+#event-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#event-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#eventsframe {
+	width: fit-content;
 }
 
 .footer {

@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Databased</title>
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class = "nav-box">
-        <ul class = "nav-list">
-          <li>
-            <img src = "img/new-icon.png">
 
-            </img>
-          </li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Databased</title>
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
 
-          <li class = "nav-text">
-            <a href = "#about" class = "nav-list-link">About</a>
-          </li>
-          <li class = "nav-text">
-            <a href = "#" class = "nav-list-link">Events</a>
-          </li>
-          <li class = "nav-text">
-            <a href = "#" class = "nav-list-link">Blog</a>
-          </li>
-        </ul>
+<body>
+  <header>
+    <nav id=header-nav>
+      <div class="nav-box">
+        <img src="img/new-icon.png" id="top-logo-img">
+        <a href="#about" class="nav-list-link">About</a>
+        <a href="#" class="nav-list-link">Events</a>
+        <a href="#" class="nav-list-link">Blog</a>
       </div>
-      </nav>
-    </header>
-    
-    <main>
+    </nav>
+  </header>
 
-      <div id = "title">
-        <div class = "databased">
-          <span class = "logo-1">data</span><span class = "logo-2">b</span><span class = logo-3>ased</span>
-        </div>
+  <main>
 
-        
+    <div id="title">
+      <div class="databased">
+        <span class="logo-1">data</span><span class="logo-2">b</span><span class=logo-3>ased</span>
       </div>
 
-      <div id = "about">
-        <div class = "about-title">
-          About
-        </div>
 
-        <div class = "about-content"> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec purus gravida, tempus ipsum non, finibus turpis. In sed volutpat tortor. Curabitur nec nisl at justo bibendum commodo. Nulla gravida in ex sed condimentum. Duis ut neque orci. Donec luctus dui eget dolor consectetur, eu rutrum orci fermentum. Nullam sit amet vestibulum elit.
+    </div>
+
+    <div id="about">
+      <div class="placeholder">text</div>
+      <div id="about-container">
+        <div class="title">About</div>
+        <div class="about-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec purus gravida, tempus ipsum non, finibus
+          turpis. In sed volutpat tortor. Curabitur nec nisl at justo bibendum commodo. Nulla gravida in ex sed
+          condimentum. Duis ut neque orci. Donec luctus dui eget dolor consectetur, eu rutrum orci fermentum. Nullam sit
+          amet vestibulum elit.
         </div>
       </div>
+    </div>
 
-      
-
-
-    </main>
-	
-    <footer>
-      <div class="footervert">
-        <div class="footer">
-          <div class="footerlist">
-            <ul>
-              <li><a href="#">About us</a></li>
-            </ul>
-          </div>
-          <div class="footerlist">
-            <ul>
-              <li><a href="#">Events</a></li>
-            </ul>
-          </div>
-          <div class="footerlist">
-            <ul>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
-        </div>
-        <div id="contactus">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Tempore provident animi mollitia dolor<br> repellendus praesentium?</div>
+    <div id="events">
+      <div id="event-container">
+        <div class="title">Events</div>
+        <div id="event-content"><iframe id="eventsframe" src="eventlist.html" width="250px" height="300px"></iframe></div>
       </div>
-    </footer>
+      <div class="placeholder">test</div>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="footervert">
+      <div class="footer">
+        <div class="footerlist">
+          <ul>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </div>
+        <div class="footerlist">
+          <ul>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div class="footerlist">
+          <ul>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="contactus">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Tempore provident animi mollitia
+        dolor<br> repellendus praesentium?</div>
+    </div>
+  </footer>
 
   <script src="index.js"></script>
-  </body>
+</body>
+
 </html>

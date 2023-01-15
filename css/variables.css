@@ -3,6 +3,7 @@
     --font-title: '';
     --font-body: '';
 
+    --header-height: 69px;
     --header-bgcolor: #101010;
     --footer-bgcolor: #101010;
     --body-bgimage: linear-gradient(#101010, #000124);
@@ -11,8 +12,11 @@
     --logo-color-2: #eeeeee;
     --logo-color-3: #9cec5b;
 
+    --content-side-padding: 10%;
+
+    --header-bottom-padding: 15px;
     --footer-side-padding: 20%;
-    --footer-top-margin: 40px;
+    --footer-top-margin: 100px;
     --footer-top-padding: 20px;
     --footer-bottom-padding: 20px;
     --footerlist-bottom-padding: 30px;
