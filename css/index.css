@@ -58,12 +58,12 @@ header{
 	padding-inline: 6%;
 	/* margin-bottom: var(--header-bottom-padding); */
 }
-.databased{
+/* .databased{
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	font-size: 6em;
-}
+} */
 
 footer{
 	position: relative;
@@ -83,11 +83,14 @@ footer{
 
 main{
 	/* height: 400vh; temp for debugging/sample */
+	/* padding-inline: var(--content-side-padding); */
 }
 
 #title{
+	padding-top: calc(var(--header-height) + 30vh);
+	padding-bottom: calc(70vh - var(--header-height));
 	text-align: center;
-	padding-block: 25%;
+	font-size: 6em;
 }
 
 #about{
@@ -95,27 +98,33 @@ main{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	padding: 0 var(--content-side-padding);
+	padding-inline: var(--content-side-padding);
 }
 
 .title{
 	font-size: 3em;
-	padding-block: 10px;
+	padding-block: var(--title-block-padding);
+	padding-inline: var(--title-inline-padding);
+	align-self: center;
 }
 
 .about-content{
 	display: flex;
 	justify-content: center;
+	padding-inline: 10%;
 }
 #about-container{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-left: 15%;
+	padding-left: calc(15% - 500px * 0.15);
 }
 
 .placeholder {
-	padding: 10%
+	margin: 20%;
+	display: grid;
+	align-content: center;
+	justify-content: center;
 }
 
 footer {
@@ -128,18 +137,20 @@ footer {
 	align-items: center;
 	justify-content: space-evenly;
 	margin-top: 30%;
+	padding-inline: var(--content-side-padding);
 }
 
 #event-title {
 	font-size: 2em;
 	margin-bottom: 20px;
 }
-#event-container {
+/* #event-container {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-right: calc(15% - 500px * 0.15);
 	align-items: center;
-}
+} */
 #event-content {
 	display: flex;
 	flex-direction: column;
@@ -149,6 +160,38 @@ footer {
 #eventsframe {
 	width: fit-content;
 }
+
+#loremimg {
+	justify-self: center;
+	align-self: center;
+}
+
+#tagline {
+	/* display: grid; */
+	font-size: 2em;
+	padding-inline: var(--content-side-padding);
+	margin-block: 300px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+	#events {
+		flex-direction: column;
+	}
+	#about {
+		flex-direction: column-reverse;
+	}
+	#about-container {
+		padding: 0;
+		margin-bottom: 30px;
+	}
+	#loremimg {
+		width: 80%;
+		height: 80%;
+		/* display: none; */
+	}
+}
+
 
 .footer {
 	display: flex;

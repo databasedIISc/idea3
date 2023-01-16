@@ -13,10 +13,12 @@
     --logo-color-3: #9cec5b;
 
     --content-side-padding: 10%;
+    --title-block-padding: 30px;
+    --title-inline-padding: calc(6% + 15px);
 
     --header-bottom-padding: 15px;
     --footer-side-padding: 20%;
-    --footer-top-margin: 100px;
+    --footer-top-margin: 250px;
     --footer-top-padding: 20px;
     --footer-bottom-padding: 20px;
     --footerlist-bottom-padding: 30px;
