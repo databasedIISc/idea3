@@ -64,6 +64,10 @@
             .then(res => res.text())
             .then(res => document.getElementById('tex').innerHTML = res)
             .then(callback)
+            .catch(error => {
+                console.log(error);
+                document.getElementById('tex').innerHTML = "There has been an error, check the console"
+            })
     </script>
 </body>
 
