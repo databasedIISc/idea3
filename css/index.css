@@ -59,10 +59,7 @@ header{
 	/* margin-bottom: var(--header-bottom-padding); */
 }
 /* .databased{
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	font-size: 6em;
+	padding-block: var(--header-height);
 } */
 
 footer{
@@ -82,14 +79,23 @@ footer{
 
 
 main{
-	/* height: 400vh; temp for debugging/sample */
+	min-height: 400vh; /* temp for debugging/sample */
 	/* padding-inline: var(--content-side-padding); */
+	padding-top: var(--header-height);
+}
+
+.content {
+	padding-inline: var(--content-side-padding);
 }
 
 #title{
-	padding-top: calc(var(--header-height) + 30vh);
-	padding-bottom: calc(70vh - var(--header-height));
+	/* padding-top: calc(var(--header-height) + 30vh);
+	padding-bottom: calc(70vh - var(--header-height)); */
+	/* padding-block: var(--header-height); */
+	min-height: 100vh;
+	display: grid;
 	text-align: center;
+	align-items: center;
 	font-size: 6em;
 }
 
@@ -97,21 +103,20 @@ main{
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
-	padding-inline: var(--content-side-padding);
 }
 
-.title{
+.sub-title{
 	font-size: 3em;
 	padding-block: var(--title-block-padding);
 	padding-inline: var(--title-inline-padding);
 	align-self: center;
 }
 
-.about-content{
+#about-content{
 	display: flex;
 	justify-content: center;
 	padding-inline: 10%;
+	text-align: center;
 }
 #about-container{
 	display: flex;
@@ -137,20 +142,13 @@ footer {
 	align-items: center;
 	justify-content: space-evenly;
 	margin-top: 30%;
-	padding-inline: var(--content-side-padding);
 }
 
 #event-title {
 	font-size: 2em;
 	margin-bottom: 20px;
 }
-/* #event-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	padding-right: calc(15% - 500px * 0.15);
-	align-items: center;
-} */
+
 #event-content {
 	display: flex;
 	flex-direction: column;
@@ -167,9 +165,7 @@ footer {
 }
 
 #tagline {
-	/* display: grid; */
 	font-size: 2em;
-	padding-inline: var(--content-side-padding);
 	margin-block: 300px;
 	text-align: center;
 }
@@ -190,10 +186,13 @@ footer {
 		height: 80%;
 		/* display: none; */
 	}
+	#title {
+		font-size: 13vw;
+	}
 }
 
 
-.footer {
+#footer {
 	display: flex;
 	justify-content: space-between;
 	padding: 0% var(--footer-side-padding) 0% var(--footer-side-padding);
@@ -201,7 +200,7 @@ footer {
 .footerlist {
 	padding-bottom: var(--footerlist-bottom-padding);
 }
-.footervert {
+#footervert {
 	background-color: var(--footer-bgcolor);
 	margin-top: var(--footer-top-margin);
 	padding-top: var(--footer-top-padding);

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog document</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    
+    <header>
+        <nav id=header-nav>
+          <div class="nav-box">
+            <img src="img/new-icon.png" id="top-logo-img">
+            <a href="#about" class="nav-list-link">About</a>
+            <a href="#" class="nav-list-link">Events</a>
+            <a href="#" class="nav-list-link">Blog</a>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+    <p id="tex" style="min-height: 1vh;">
+    </p>
+    </main>
+
+    <footer>
+        <div id="footervert">
+            <div id="footer">
+                <div class="footerlist">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                </div>
+                <div class="footerlist">
+                    <ul>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footerlist">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contactus">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Tempore provident animi
+                mollitia
+                dolor<br> repellendus praesentium?</div>
+        </div>
+    </footer>
+
+    <script id="fetch-blog-data">
+        let callback = function (res) {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+            script.async = true;
+            document.head.appendChild(script);
+        }
+        fetch('/blog/test')
+            .then(res => res.text())
+            .then(res => document.getElementById('tex').innerHTML = res)
+            .then(callback)
+    </script>
+</body>
+
+</html>
